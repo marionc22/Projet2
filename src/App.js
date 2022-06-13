@@ -76,21 +76,22 @@ laQuestion();
   }
 
   return (
-    <>
-      <div className="App">
+    <div className = "jeu">
+      <div className="plateau">
         {board.map((element, index) => (
           <Cases
             key={element.categorie}
             nom={element.categorie}
             player1Place={player1 === index ? "player 1" : ""}
           />
-        ))}
+          ))}
       </div>
 
-      <div>
+      <div className="poserQuestion">
           <PoserQuestion question = {questionPosee} /> 
       </div>
-    </>
+    </div>
+   
   );
 }
 export default App;

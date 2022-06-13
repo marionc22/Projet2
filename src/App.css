@@ -1,13 +1,14 @@
-.App {
+.plateau {
   text-align: center;
+  width: 40%;
 }
 
 body {
   margin : 0;
 }
 
-.Géographie, .Musique, .Film, .Sport {
-  width: 50%;
+.Géographie, .Musique, .Film, .Sport, .Départ, .Arrivée {
+  
   height: 100px;
   border: 1px solid black;
   margin-bottom: 0;
@@ -36,4 +37,9 @@ body {
 .playerPlace{
   display: flex;
   justify-content: center;
+}
+
+.jeu {
+  display: flex;
+  justify-content: space-around;
 }
